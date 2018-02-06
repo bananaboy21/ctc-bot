@@ -64,7 +64,7 @@ async def leagues(ctx):
 
 @bot.command()
 async def tourney(ctx):
-	color = discord.Color(value=0x00ff00)
+    color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='COC Tournaments')
     em.description = 'Here are some COC tourneys to join! \n\nClash Champs: https://discord.gg/a95eHnq \nCPE: https://discord.gg/XAEx6Hf \nForums Cup: https://discord.gg/8RNXdXR'
     await ctx.send(embed=em)
@@ -72,7 +72,7 @@ async def tourney(ctx):
 
 @bot.command()
 async def communities(ctx):
-	color = discord.Color(value=0x00ff00)
+    color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='COC Communities')
     em.description = "Here are some COC communities to join! \n\nIndian Clash Community: https://discord.gg/qg8wPtv \nCasual Clash: https://discord.io/clash \nClash Tutor:https://discord.gg/SYDB7K9\nSouth African Clash Community:https://discord.gg/HVt929x\nBase Building:https://discord.gg/HR8zT4M\nClash Roulette:https://discord.me/roulette\nPotluck:https://discord.me/cocpotluck\nForums vs Reddit:https://discord.gg/JE86z7c\nCoc Bromance:https://discord.gg/KWjve7c\nGoblins Realm:https://discord.gg/qgSrda2\nZillas Fam:https://discord.gg/bJbj65x\nClash Connections:https://discord.gg/CN9VW3B\nClash Art community:https://discord.gg/BWcbUH7"
     await ctx.send(embed=em)
@@ -80,7 +80,7 @@ async def communities(ctx):
 
 @bot.command()
 async def bots(ctx):
-	color = discord.Color(value=0x00ff00)
+    color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='Discord Bots')
     em.description = "Here are the servers for some Discord bots. \n\ndat banana bot: https://discord.gg/wvkVknA\nMyBot: https://discord.gg/4ZeNS74\nWmbot: https://discord.me/warmatch\nSidekick-https://discord.gg/ENYgjk"
     await ctx.send(embed=em)
