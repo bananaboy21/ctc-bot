@@ -31,6 +31,7 @@ async def help(ctx):
     em.add_field(name="website", value="Returns the CTC's official website.")
     em.add_field(name="logo", value="Returns facts for the CTC's logo!")
     em.add_field(name="leagues", value="Returns invite links to some COC leagues!")
+    em.add_field(name="tourney", value="Rretunrs invite links to some COC tournaments!")
     em.set_thumbnail(url="https://media.discordapp.net/attachments/410033646309736448/410205224213413889/JPEG_20180126_122140.jpg")
     await ctx.send(embed=em)
 
@@ -55,7 +56,15 @@ async def logo(ctx):
 async def leagues(ctx):
     color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='COC Leagues')
-    em.description = 'Here are some leagues to join! \n\nWCL: https://discord.gg/Hwk9SbW \nBWC: https://discord.gg/W5EgkRH \nICWL: https://discord.gg/fNTRU32 \nNCWL: discord.me/ncwl \nGauntlet: https://discord.gg/WbK39GJ \nAWL: https://discord.gg/WbK39GJ \nClash Champs: https://discord.gg/a95eHnq'
+    em.description = 'Here are some leagues to join! \n\nWCL: https://discord.gg/Hwk9SbW \nBWC: https://discord.gg/W5EgkRH \nICWL: https://discord.gg/fNTRU32 \nNCWL: discord.me/ncwl \nGauntlet: https://discord.gg/WbK39GJ \nAWL: https://discord.gg/WbK39GJ'
+    await ctx.send(embed=em)
+
+
+@bot.command()
+async def tourney(ctx):
+	color = discord.Color(value=0x00ff00)
+    em = discord.Embed(color=color, title='COC Tournaments')
+    em.description = 'Here are some COC tourneys to join! \n\nClash Champs: https://discord.gg/a95eHnq \nCPE: https://discord.gg/XAEx6Hf \nForums Cup: https://discord.gg/8RNXdXR'
     await ctx.send(embed=em)
 
 
