@@ -22,16 +22,17 @@ async def on_ready():
     print('Bot is online, and ready to ROLL!')
     await bot.change_presence(game=discord.Game(name="$help"))
 
-	
+
 @bot.command()
 async def help(ctx):
     color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='COC Talk Club Bot')
     em.add_field(name="twitter", value="Returns the CTC's Twitter page.")
     em.add_field(name="website", value="Returns the CTC's official website.")
-    em.add_field(name="logo", value="Returns facts for the CTC's logo!")
+    em.add_field(name="logo", value="Returns facts for the COC Talk Club logo!")
     em.add_field(name="leagues", value="Returns invite links to some COC leagues!")
-    em.add_field(name="tourney", value="Rretunrs invite links to some COC tournaments!")
+    em.add_field(name="tourney", value="Returns invite links to some COC tournaments!")
+    em.add_field(name="communities", value="Returns invite links to some COC communities!")
     em.set_thumbnail(url="https://media.discordapp.net/attachments/410033646309736448/410205224213413889/JPEG_20180126_122140.jpg")
     await ctx.send(embed=em)
 
@@ -67,6 +68,13 @@ async def tourney(ctx):
     em.description = 'Here are some COC tourneys to join! \n\nClash Champs: https://discord.gg/a95eHnq \nCPE: https://discord.gg/XAEx6Hf \nForums Cup: https://discord.gg/8RNXdXR'
     await ctx.send(embed=em)
 
+
+@bot.command()
+async def communities(ctx):
+    color = discord.Color(value=0x00ff00)
+    em = discord.Embed(color=color, title='COC Communities')
+    em.description = "Here are some COC communities to join! \n\nIndian Clash Community: https://discord.gg/qg8wPtv \nCasual Clash: https://discord.io/clash \nClash Tutor:https://discord.gg/SYDB7K9\nSouth African Clash Community:https://discord.gg/HVt929x\nBase Building:https://discord.gg/HR8zT4M\nClash Roulette:https://discord.me/roulette\nPotluck:https://discord.me/cocpotluck\nMyBot:https://discord.gg/4ZeNS74\nForums vs Reddit:https://discord.gg/JE86z7c\nCoc Bromance:https://discord.gg/KWjve7c\nGoblins Realm:https://discord.gg/qgSrda2\nZillas Fam:https://discord.gg/bJbj65x\nClash Connections:https://discord.gg/CN9VW3B\nClash Art community:https://discord.gg/BWcbUH7"
+    await ctx.send(embed=em)
 
 if not os.environ.get('TOKEN'):
     print("no token found REEEE!")
