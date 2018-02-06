@@ -56,9 +56,9 @@ async def leagues(ctx):
 	color = discord.Color(value=0x00ff00)
 	em = discord.Embed(color=color, title='COC Leagues')
 	em.description = 'Here are some leagues to join!'
-	em.add_field(name="WCL", value="https://discord.gg/kD7VW78")
+	em.add_field(name="WCL", value="https://discord.gg/Hwk9SbW")
 	em.add_field(name="ICWL", value="https://discord.gg/fNTRU32")
-	em.add_field(name="NCWL", value="https://discord.gg/fNTRU32")
+	em.add_field(name="NCWL", value="https://discord.me/ncwl")
 	em.add_field(name="Gauntlet", value="https://discord.gg/2XtH5nE")
 	em.add_field(name="AWL", value="https://discord.gg/WbK39GJ")
 	em.add_field(name="Clash Champs", value="https://discord.gg/a95eHnq")
