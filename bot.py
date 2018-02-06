@@ -22,7 +22,7 @@ async def on_ready():
     print('Bot is online, and ready to ROLL!')
     await bot.change_presence(game=discord.Game(name="$help"))
 
-
+	
 @bot.command()
 async def help(ctx):
     color = discord.Color(value=0x00ff00)
@@ -62,7 +62,7 @@ async def leagues(ctx):
 
 @bot.command()
 async def tourney(ctx):
-	color = discord.Color(value=0x00ff00)
+    color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='COC Tournaments')
     em.description = 'Here are some COC tourneys to join! \n\nClash Champs: https://discord.gg/a95eHnq \nCPE: https://discord.gg/XAEx6Hf \nForums Cup: https://discord.gg/8RNXdXR'
     await ctx.send(embed=em)
